@@ -4,18 +4,12 @@
 
 Per avviare il progetto in modalità di sviluppo, segui questi passaggi:
 
-1. Clona il repository GitHub:  
-   ```bash
-   git clone https://github.com/tuo-repository/vox-populi.git
-   cd vox-populi
-   ```
-
-2. Installa le dipendenze:  
+1. Installa le dipendenze:  
    ```bash
    npm install
    ```
 
-3. Avvia il server di sviluppo:  
+2. Avvia il server di sviluppo:  
    ```bash
    npm run dev
    # oppure
@@ -24,7 +18,7 @@ Per avviare il progetto in modalità di sviluppo, segui questi passaggi:
    pnpm dev
    ```
 
-4. Apri [http://localhost:3000](http://localhost:3000) nel browser per visualizzare l'applicazione.
+3. Apri [http://localhost:3000](http://localhost:3000) nel browser per visualizzare l'applicazione.
 
 ---
 
