@@ -1,7 +1,7 @@
 import axios from "axios";
 import { constants } from "@/utils/constant";
 
-const env = "PROD";
+const env = "DEV";
 export const AuthKit = axios.create({
   baseURL: constants[env].AUTH_SERVER_URL,
   timeout: 100000,

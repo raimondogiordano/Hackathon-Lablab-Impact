@@ -1,14 +1,12 @@
 import { AuthKit, APIkit } from "@/app/api/kits";
 import { routes } from "@/app/api/routes";
 
-export const login = async (body) => {
+export const getAllProposal = async (body) => {
   try {
-    const response = await AuthKit.post(routes.login, body);
+    const response = await APIkit.get("/quartiere_proposals/");
+    console.log(response);
     const data = response.data;
-    console.log(data);
-    if (data.status) {
-      return data.data;
-    }
+    return data;
   } catch (error) {
     if (error.response.data.message === "Email not verified") {
       return "NOT VERIFIED";

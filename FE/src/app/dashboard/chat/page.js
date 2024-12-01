@@ -1,23 +1,56 @@
 "use client";
 import "@/app/components/styles/chat.css";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FiMic, FiSend } from "react-icons/fi"; // Assicurati di avere installato react-icons
 
 const ChatPage = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
+  const websocketRef = useRef(null); // Per mantenere la connessione al WebSocket
+
+  // Effettua la connessione al WebSocket quando il componente viene montato
+  useEffect(() => {
+    websocketRef.current = new WebSocket(
+      "ws://localhost:8000/api/chat/citizen"
+    ); // Sostituisci con il tuo indirizzo del server
+
+    websocketRef.current.onopen = () => {
+      console.log("WebSocket connection opened");
+    };
+
+    websocketRef.current.onmessage = (event) => {
+      const botMessage = { text: event.data, sender: "bot" };
+      setMessages((prevMessages) => [...prevMessages, botMessage]);
+    };
+
+    websocketRef.current.onclose = () => {
+      console.log("WebSocket connection closed");
+    };
+
+    websocketRef.current.onerror = (error) => {
+      console.error("WebSocket error:", error);
+    };
+
+    // Chiudi la connessione quando il componente viene smontato
+    return () => {
+      websocketRef.current.close();
+    };
+  }, []);
 
   const handleSend = () => {
     if (input.trim()) {
       const newMessage = { text: input, sender: "user" };
       setMessages([...messages, newMessage]);
-      setInput("");
 
-      // Simulate chatbot response
-      setTimeout(() => {
-        const botMessage = { text: `You said: ${input}`, sender: "bot" };
-        setMessages((prevMessages) => [...prevMessages, botMessage]);
-      }, 1000);
+      // Invia il messaggio dell'utente al server tramite WebSocket
+      if (
+        websocketRef.current &&
+        websocketRef.current.readyState === WebSocket.OPEN
+      ) {
+        websocketRef.current.send(input);
+      }
+
+      setInput("");
     }
   };
 

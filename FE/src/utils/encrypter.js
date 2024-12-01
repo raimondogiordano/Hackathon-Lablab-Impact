@@ -1,6 +1,6 @@
 import CryptoJS from "crypto-js";
 import { constants } from "./constant";
-const env = "PROD";
+const env = "DEV";
 var key = constants[env].ENCRYPTION_KEY;
 
 export const DoEncrypt = (text) => {
