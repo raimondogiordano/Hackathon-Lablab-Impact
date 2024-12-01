@@ -1,0 +1,3 @@
+paths={
+    "positions":"/positions"
+}
