@@ -1,4 +1,4 @@
-# **Vox Populi BE**
+# **Vox Populi - BE**
 
 ## **Guida all'Avvio**
 

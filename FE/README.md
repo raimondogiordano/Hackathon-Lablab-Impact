@@ -1,4 +1,4 @@
-# **Vox Populi FE**
+# **Vox Populi - FE**
 
 ## **Guida all'Avvio**
 
