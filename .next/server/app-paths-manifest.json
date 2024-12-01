@@ -2,5 +2,5 @@
   "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/auth/login/page": "app/auth/login/page.js",
-  "/dashboard/cliente/page": "app/dashboard/cliente/page.js"
+  "/dashboard/admin/page": "app/dashboard/admin/page.js"
 }

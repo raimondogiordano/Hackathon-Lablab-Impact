@@ -1,5 +1,5 @@
 "use client";
-import { createPlayer, register } from "@/app/api";
+import { register } from "@/app/api";
 import { DefaultButton } from "@/app/components/ui/buttons";
 import { Input, InputEnd, InputStart } from "@/app/components/ui/inputs";
 import Link from "next/link";
@@ -27,11 +27,11 @@ export default function Signup() {
       delete userValue.ruolo;
       const response = await register(userValue);
 
-      const data = await createPlayer({
-        userId: response._id,
-        role: user.ruolo,
-        name: user.name + " " + user.surname,
-      });
+      // const data = await createPlayer({
+      //   userId: response._id,
+      //   role: user.ruolo,
+      //   name: user.name + " " + user.surname,
+      // });
       setuser({
         name: "",
         surname: "",
@@ -39,11 +39,11 @@ export default function Signup() {
         password: "",
         ruolo: "",
       });
-      if (data) {
+      // if (data) {
         alert(
           "Registrazione avvenuta con successo riceverai una mail per verificare il tuo account"
         );
-      }
+      // }
     } catch (error) {
       alert(error.message);
     }
