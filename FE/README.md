@@ -51,9 +51,8 @@ Per avviare il progetto in modalità di sviluppo, segui questi passaggi:
 
 ## **Struttura del Progetto**
 
-- **`/app/page.js`**: File principale per la gestione delle pagine.
-- **`/styles`**: Configurazioni e personalizzazioni di TailwindCSS.
-- **`/components`**: Componenti React riutilizzabili per l'interfaccia utente.
+- **`/src/app/page.js`**: File principale per la gestione delle pagine.
+- **`/src/app/components`**: Componenti React riutilizzabili per l'interfaccia utente.
 
 ---
 
@@ -63,21 +62,6 @@ Per avviare il progetto in modalità di sviluppo, segui questi passaggi:
 Il file di configurazione `tailwind.config.js` ti consente di:
 - Impostare i colori personalizzati.
 - Modificare il tema dell'applicazione in base alle esigenze.
-
----
-
-## **Come Contribuire**
-
-1. Fai un fork del repository.
-2. Crea un branch per la tua funzionalità:  
-   ```bash
-   git checkout -b feature/nuova-funzionalità
-   ```
-3. Fai il commit delle tue modifiche:  
-   ```bash
-   git commit -m "Aggiunta di una nuova funzionalità"
-   ```
-4. Invia una pull request.
 
 ---
 
@@ -98,5 +82,5 @@ Questo progetto è sotto licenza MIT. Vedi il file `LICENSE` per maggiori dettag
 
 ## **Contatti**
 Se hai domande o feedback, non esitare a contattarci:  
-📧 **email@example.com**  
-🔗 [LinkedIn](https://linkedin.com/in/profilo)
+📧 **info@puradigital.it**  
+🔗 [LinkedIn](https://www.linkedin.com/company/puradigital/)
