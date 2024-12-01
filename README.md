@@ -1,64 +1,102 @@
-##Generic Info
+# **Vox Populi**
 
-## Getting Started
+## **Descrizione del Progetto**
 
-First, run the development server:
+**Vox Populi** è un agente AI progettato per migliorare la qualità della vita nei quartieri di Bologna. L'applicazione analizza automaticamente le proposte dei cittadini, identifica trend emergenti e suggerisce iniziative concrete. Grazie all'uso di tecnologie avanzate come **Llama** per l'analisi semantica e **Groq** per l'elaborazione rapida, il progetto favorisce la partecipazione attiva dei cittadini, promuovendo trasparenza e inclusività nella gestione comunale.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### **Obiettivi Principali**
+- Analizzare le proposte dei cittadini in tempo reale.
+- Identificare trend e priorità emergenti.
+- Interagire con i cittadini per migliorare la comunicazione tra comunità e amministrazione locale.
+- Suggerire iniziative concrete per il miglioramento dei quartieri.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## **Tecnologie Utilizzate**
+- **Framework Frontend**: [Next.js](https://nextjs.org/)
+- **Libreria CSS**: [TailwindCSS](https://tailwindcss.com/)
+- **Analisi Semantica**: Llama
+- **Elaborazione Rapida**: Groq
+- **Componenti React**: React Icons, React Markdown
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## **Guida all'Avvio**
 
-To learn more about Next.js, take a look at the following resources:
+Per avviare il progetto in modalità di sviluppo, segui questi passaggi:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clona il repository GitHub:  
+   ```bash
+   git clone https://github.com/tuo-repository/vox-populi.git
+   cd vox-populi
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. Installa le dipendenze:  
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. Avvia il server di sviluppo:  
+   ```bash
+   npm run dev
+   # oppure
+   yarn dev
+   # oppure
+   pnpm dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Apri [http://localhost:3000](http://localhost:3000) nel browser per visualizzare l'applicazione.
 
-Check out our [Next.js deployment
+---
 
-{
-"name": "Bologna-proposal",
-"version": "0.1.0",
-"private": true,
-"scripts": {
-"dev": "next dev",
-"build": "next build",
-"start": "next start",
-"lint": "next lint"
-},
-"dependencies": {
-"next": "14.2.5",
-"react": "^18",
-"react-dom": "^18",
-"react-icons": "^5.2.1",
-"react-markdown": "^9.0.1",
-"remark-gfm": "^4.0.0"
-},
-"devDependencies": {
-"postcss": "^8",
-"tailwindcss": "^3.4.1"
-}
-}
+## **Struttura del Progetto**
 
-##Specific Info
+- **`/app/page.js`**: File principale per la gestione delle pagine.
+- **`/styles`**: Configurazioni e personalizzazioni di TailwindCSS.
+- **`/components`**: Componenti React riutilizzabili per l'interfaccia utente.
 
-TAILWIND CONFIG TO SET COLORS AND CHANGE THEME
+---
+
+## **Configurazioni Specifiche**
+
+### **Personalizzazione di TailwindCSS**
+Il file di configurazione `tailwind.config.js` ti consente di:
+- Impostare i colori personalizzati.
+- Modificare il tema dell'applicazione in base alle esigenze.
+
+---
+
+## **Come Contribuire**
+
+1. Fai un fork del repository.
+2. Crea un branch per la tua funzionalità:  
+   ```bash
+   git checkout -b feature/nuova-funzionalità
+   ```
+3. Fai il commit delle tue modifiche:  
+   ```bash
+   git commit -m "Aggiunta di una nuova funzionalità"
+   ```
+4. Invia una pull request.
+
+---
+
+## **Distribuzione su Vercel**
+
+Il metodo più semplice per distribuire l'applicazione è utilizzare la piattaforma [Vercel](https://vercel.com/). Per distribuire, segui questi passaggi:
+1. Collega il repository a Vercel.
+2. Seleziona il branch principale per la distribuzione.
+3. Vercel genererà un'URL pubblica per il tuo progetto.
+
+---
+
+## **Licenza**
+
+Questo progetto è sotto licenza MIT. Vedi il file `LICENSE` per maggiori dettagli.
+
+---
+
+## **Contatti**
+Se hai domande o feedback, non esitare a contattarci:  
+📧 **email@example.com**  
+🔗 [LinkedIn](https://linkedin.com/in/profilo)
