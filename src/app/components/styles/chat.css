@@ -1,0 +1,36 @@
+/* globals.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+
+  border-radius: 0.5rem;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.chat-input {
+  display: flex;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 0.5rem;
+
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.chat-input button {
+  padding: 0.5rem;
+
+  border-radius: 0 0.25rem 0.25rem 0;
+}

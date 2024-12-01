@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: theme("colors.light.background");
+  --text-color: theme("colors.light.text");
+  --accent-background-color: theme("colors.accent.background");
+  --accent-text-color: theme("colors.accent.text");
+  --link-text-color: theme("colors.accent.link");
+  --border-color: theme("colors.light.border");
+}
+.dark {
+  --background-color: theme("colors.dark.background");
+  --text-color: theme("colors.dark.text");
+  --link-text-color: theme("colors.accent.linkDark");
+  --border-color: theme("colors.dark.border");
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.accent {
+  background-color: var(--accent-background-color);
+  color: var(--accent-text-color);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.prose {
+  @apply text-balance;
+}
+
+::-webkit-scrollbar {
+  width: 9px; /* Larghezza della barra di scorrimento */
+  width: 9px; /* Larghezza della barra di scorrimento */
+  background-color: transparent; /* Colore di sfondo della barra */
+}
+
+/* Personalizza il tracciato della barra (la parte su cui scorre il cursore) */
+::-webkit-scrollbar-track {
+  border-radius: 10px; /* Angoli arrotondati del tracciato */
+  /* Colore di sfondo del tracciato */
+}
+
+/* Personalizza il cursore della barra di scorrimento */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px; /* Angoli arrotondati del cursore */ /* Effetto ombra per il cursore */
+  background-color: var(--accent-background-color); /* Colore del cursore */
+  /* Bordo del cursore */
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px; /* Angoli arrotondati del cursore */
+  box-shadow: inset 0 0 6px rgba(231, 231, 231, 0.1); /* Effetto ombra per il cursore */
+  background-color: var(--border-color); /* Colore del cursore */
+  /* Bordo del cursore */
+}
+
+/* Cambia colore al cursore quando passi sopra con il mouse */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent-background-color);
+  opacity: 0.8;
+  /* Colore del cursore quando è in hover */
+}
+
+input::-webkit-datetime-edit-day-field:focus,
+input::-webkit-datetime-edit-month-field:focus,
+input::-webkit-datetime-edit-year-field:focus {
+  color: white;
+}

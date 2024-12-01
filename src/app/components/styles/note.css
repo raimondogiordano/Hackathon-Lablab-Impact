@@ -1,0 +1,115 @@
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose h1 {
+  font-size: 2rem;
+}
+
+.prose h2 {
+  font-size: 1.75rem;
+}
+
+.prose h3 {
+  font-size: 1.5rem;
+}
+
+.prose h4 {
+  font-size: 1.25rem;
+}
+
+.prose h5 {
+  font-size: 1rem;
+}
+
+.prose h6 {
+  font-size: 0.875rem;
+}
+
+.prose p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.prose a {
+  color: var(--link-text-color);
+  text-decoration: underline;
+}
+
+.prose strong {
+  font-weight: bold;
+}
+
+.prose em {
+  font-style: italic;
+}
+
+.prose ul,
+.prose ol {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.prose ul li,
+.prose ol li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose blockquote {
+  border-left: 4px solid #333;
+  padding-left: 1rem;
+  font-style: italic;
+  margin-left: 1rem;
+}
+
+.prose code {
+  background-color: var(--tw-prose-pre-bg, #f5f5f5);
+  color: var(--tw-prose-code, #000000);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+}
+
+.prose pre {
+  background-color: var(--tw-prose-pre-bg, #f5f5f5);
+  color: var(--tw-prose-pre-code, #000000);
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.prose table {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+}
+
+.prose th,
+.prose td {
+  padding: 0.5rem;
+  border: 1px solid #c2c2c2;
+}
+
+.prose th {
+  font-weight: bold;
+}
+
+.prose caption {
+  caption-side: bottom;
+  text-align: left;
+  color: var(--tw-prose-captions, #000000);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
