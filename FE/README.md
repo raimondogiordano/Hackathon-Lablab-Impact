@@ -1,26 +1,5 @@
 # **Vox Populi**
 
-## **Descrizione del Progetto**
-
-**Vox Populi** è un agente AI progettato per migliorare la qualità della vita nei quartieri di Bologna. L'applicazione analizza automaticamente le proposte dei cittadini, identifica trend emergenti e suggerisce iniziative concrete. Grazie all'uso di tecnologie avanzate come **Llama** per l'analisi semantica e **Groq** per l'elaborazione rapida, il progetto favorisce la partecipazione attiva dei cittadini, promuovendo trasparenza e inclusività nella gestione comunale.
-
-### **Obiettivi Principali**
-- Analizzare le proposte dei cittadini in tempo reale.
-- Identificare trend e priorità emergenti.
-- Interagire con i cittadini per migliorare la comunicazione tra comunità e amministrazione locale.
-- Suggerire iniziative concrete per il miglioramento dei quartieri.
-
----
-
-## **Tecnologie Utilizzate**
-- **Framework Frontend**: [Next.js](https://nextjs.org/)
-- **Libreria CSS**: [TailwindCSS](https://tailwindcss.com/)
-- **Analisi Semantica**: Llama
-- **Elaborazione Rapida**: Groq
-- **Componenti React**: React Icons, React Markdown
-
----
-
 ## **Guida all'Avvio**
 
 Per avviare il progetto in modalità di sviluppo, segui questi passaggi:

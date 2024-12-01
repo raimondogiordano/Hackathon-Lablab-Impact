@@ -1,4 +1,6 @@
-VOX POPULI
+# **Vox Populi**
+
+## **Guida all'Avvio**
 
 1. Create python environment: `python -m venv .venv`
 2. Activate python environment: `source .venv/bin/activate`

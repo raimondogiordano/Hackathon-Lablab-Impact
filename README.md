@@ -23,6 +23,13 @@ Vox Populi utilizza un agente AI per analizzare automaticamente le proposte dei 
 
 Il progetto si basa su tecnologie avanzate, tra cui un agente AI che gestisce l'ingestion e l'analisi delle proposte, offrendo funzionalità di visualizzazione dei dati e insight per l'amministrazione. La soluzione prevede inoltre l'integrazione di tecnologie multimodali per l'analisi di immagini e una gestione più efficace delle informazioni.
 
+## **Tecnologie Utilizzate**
+- **Framework Frontend**: [Next.js](https://nextjs.org/)
+- **Libreria CSS**: [TailwindCSS](https://tailwindcss.com/)
+- **Analisi Semantica**: Llama
+- **Elaborazione Rapida**: Groq
+- **Componenti React**: React Icons, React Markdown
+
 ## Sviluppi Futuri
 
 - **Integrazione SQL Agent**: Per automatizzare ulteriormente la gestione dei dati e migliorare l'efficienza del sistema.
