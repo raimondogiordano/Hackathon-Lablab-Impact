@@ -28,7 +28,6 @@ Il progetto si basa su tecnologie avanzate, tra cui un agente AI che gestisce l'
 - **Libreria CSS**: [TailwindCSS](https://tailwindcss.com/)
 - **Analisi Semantica**: Llama
 - **Elaborazione Rapida**: Groq
-- **Componenti React**: React Icons, React Markdown
 
 ## Sviluppi Futuri
 
